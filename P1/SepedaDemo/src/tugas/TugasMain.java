@@ -6,8 +6,6 @@ public class TugasMain {
         // Convensional Phone
         ConvensionalPhone convTlpn1 = new ConvensionalPhone();
         ConvensionalPhone convTlpn2 = new ConvensionalPhone();
-        // Handphpone
-        Handphone hp = new Handphone();
 
         convTlpn1.setYearLaunching(1934);
         convTlpn1.setMerk("Nokia");
@@ -28,6 +26,9 @@ public class TugasMain {
         convTlpn2.reduVolume(30);
         convTlpn2.printInfo();
         System.out.println();
+
+        // Handphpone
+        Handphone hp = new Handphone();
 
         hp.setAndroidVersion("Lolipop");
         hp.setMerk("Xiaomi");
@@ -51,6 +52,7 @@ public class TugasMain {
 
         motor1.hidupkanMesin();
         motor2.hidupkanMesin();
+        System.out.println();
 
         motor1.percepat(30);
         motor2.percepat(20);
@@ -71,7 +73,7 @@ public class TugasMain {
         motor2.tampilkanInfo();
         System.out.println();
 
-        //Router
+        // Router
         Router router1 = new Router("Router1", "192.168.1.1", 4);
         Router router2 = new Router("Router2", "192.168.2.1", 8);
 

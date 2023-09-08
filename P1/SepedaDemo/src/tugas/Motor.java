@@ -25,13 +25,11 @@ public class Motor {
 
     public void hidupkanMesin() {
         mesinMenyala = true;
-        System.out.println("Mesin Motor dinyalakan.");
     }
 
     public void matikanMesin() {
         mesinMenyala = false;
         kecepatan = 0;
-        System.out.println("Mesin Motor dimatikan.");
     }
 
     // Method untuk mempercepat Motor
@@ -42,5 +40,5 @@ public class Motor {
         } else {
             System.out.println("Mesin motor mati, tidak dapat dipercepat.");
         }
-    }    
+    }
 }

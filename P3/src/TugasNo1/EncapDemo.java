@@ -16,11 +16,22 @@ public class EncapDemo {
         return age;
     }
 
+//    public void setAge(int newAge) {
+//        if (newAge> 30){
+//            age = 30;
+//        }else{
+//            age = newAge;
+//        }
+//    }
+
+//    Jawaban untuk nomer 3 yaitu mengubah function agar nilai yang dapat dimasukkan 18 - 30
     public void setAge(int newAge) {
-        if (newAge> 30){
-            age = 30;
-        }else{
+        if (newAge >= 18 && newAge <= 30) {
             age = newAge;
+        } else if (newAge < 18) {
+            age = 18;
+        } else {
+            age = 30;
         }
     }
 }

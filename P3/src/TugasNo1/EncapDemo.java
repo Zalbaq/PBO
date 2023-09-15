@@ -1,4 +1,4 @@
-package Tugas;
+package TugasNo1;
 
 public class EncapDemo {
     private  String name;

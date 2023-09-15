@@ -37,11 +37,21 @@ public class Anggota {
         }
     }
 
+    //    public void angsur(double jumlah) {
+//        if (jumlah <= jumlahPinjaman) {
+//            jumlahPinjaman -= jumlah;
+//        } else {
+//            System.out.println("Maaf, jumlah angsuran melebihi jumlah pinjaman.");
+//        }
+//    }
+
+//    Merubah method angsur agar Anggota mengangsur minimal dari pinjaman
     public void angsur(double jumlah) {
-        if (jumlah <= jumlahPinjaman) {
+        double minimalAngsuran = 0.1 * jumlahPinjaman;
+        if (jumlah >= minimalAngsuran) {
             jumlahPinjaman -= jumlah;
         } else {
-            System.out.println("Maaf, jumlah angsuran melebihi jumlah pinjaman.");
+            System.out.println("Maaf, angsuran harus 10% dari jumlah pinjaman.");
         }
     }
 }

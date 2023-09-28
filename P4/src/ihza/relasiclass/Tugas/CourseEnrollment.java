@@ -1,2 +1,37 @@
-package ihza.relasiclass.Tugas;public class CourseEnrollment {
+package ihza.relasiclass.Tugas;
+public class CourseEnrollment {
+    private Student student;
+    private Course course;
+    private int grade;
+
+    public CourseEnrollment(Student student, Course course, int grade) {
+        this.student = student;
+        this.course = course;
+        this.grade = grade;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
 }
+

@@ -23,6 +23,10 @@ public class Gerbong {
         return info;
     }
     public void setPenumpang(Penumpang penumpang, int nomor) {
-        this.arrayKursi[nomor - 1].setPenumpang(penumpang);
+        if (this.arrayKursi[nomor-1].getPenumpang() != null){
+            System.out.println("Kursi telah dipesan");
+        }else{
+            this.arrayKursi[nomor - 1].setPenumpang(penumpang);
+        }
     }
 }

@@ -1,9 +1,9 @@
 package Kampus;
 
-class Faculty extends Person {
+public class OB extends Person {
     private String employeeId;
 
-    public Faculty(String name, int age, String employeeId) {
+    public OB(String name, int age, String employeeId) {
         super(name, age);
         this.employeeId = employeeId;
     }
@@ -13,7 +13,11 @@ class Faculty extends Person {
     }
 
     public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
+        if (employeeId.length() == 5) {
+            this.employeeId = employeeId;
+        } else {
+            System.out.println("Employee ID must be 5 characters long");
+        }
     }
 
     @Override
